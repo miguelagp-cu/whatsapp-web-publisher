@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-web-publisher",
+  "version": "1.0.0",
+  "description": "Este proyecto utiliza la **Evolution API** para conectar con grupos de WhatsApp, extraer tipos de mensajes específicos y publicarlos automáticamente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelagp-cu/whatsapp-web-publisher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/miguelagp-cu/whatsapp-web-publisher/issues"
+  },
+  "homepage": "https://github.com/miguelagp-cu/whatsapp-web-publisher#readme"
+}
