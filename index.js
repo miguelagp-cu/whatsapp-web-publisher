@@ -1,11 +1,15 @@
 const axios = require('axios');
 require('dotenv').config();
 
-async function checkAPI() {
- const res = await axios.get(`${process.env.EVOLUTION_API_URL}instance/fetchInstances`, {
- headers: { apikey: process.env.EVOLUTION_API_KEY }
- });
- console.log('API activa:', res.status);
-}
+const EVOLUTION_BASE_URL = process.env.EVOLUTION_BASE_URL;
+const EVOLUTION_API_KEY = process.env.EVOLUTION_API_KEY;
 
-checkAPI();
+const client = axios.create({
+ baseURL: EVOLUTION_BASE_URL,
+ headers: {
+ 'Authorization': `Bearer ${EVOLUTION_API_KEY}`,
+ 'Content-Type': 'application/json'
+ }
+});
+
+module.exports = client;
