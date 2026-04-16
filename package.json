@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/miguelagp-cu/whatsapp-web-publisher/issues"
   },
-  "homepage": "https://github.com/miguelagp-cu/whatsapp-web-publisher#readme"
+  "homepage": "https://github.com/miguelagp-cu/whatsapp-web-publisher#readme",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "dotenv": "^17.4.2"
+  }
 }
